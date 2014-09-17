@@ -1,0 +1,40 @@
+Name:		nethserver-p3scan
+Version:        @@VERSION@@
+Release:        @@RELEASE@@
+Summary:	NethServer p3scan
+Group:		Networking/Daemons
+License:	GPLv2
+URL:		http://www.nethesis.it
+Source0:	%{name}-%{version}.tar.gz
+BuildArch: 	noarch
+
+BuildRequires:	nethserver-devtools
+Requires:	nethserver-firewall-base
+Requires:	nethserver-mail-filter
+Requires:	p3scan
+
+%description
+p3scan (pop3 proxy) add-on for NethServer
+
+%prep
+%setup
+
+%build
+%{makedocs}
+perl createlinks
+
+%install
+rm -rf $RPM_BUILD_ROOT
+(cd root   ; find . -depth -not -name '*.orig' -print  | cpio -dump $RPM_BUILD_ROOT)
+%{genfilelist} $RPM_BUILD_ROOT > %{name}-%{version}-%{release}-filelist
+echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
+
+%clean 
+rm -rf $RPM_BUILD_ROOT
+
+%pre
+
+%files -f %{name}-%{version}-%{release}-filelist
+%defattr(-,root,root)
+
+%changelog
