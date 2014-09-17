@@ -9,7 +9,7 @@ use esmith::Build::CreateLinks qw(:all);
 my $event = "nethserver-p3scan-update";
 templates2events("/etc/p3scan/p3scan.conf", $event);
 event_services($event, qw(
-   p3scanl restart
+   p3scan restart
 ));
 event_actions($event, 'initialize-default-databases' => '00');
 event_actions($event, 'firewall-adjust' => '20');
