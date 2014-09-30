@@ -10,7 +10,8 @@ BuildArch: 	noarch
 
 BuildRequires:	nethserver-devtools
 Requires:	nethserver-firewall-base
-Requires:	nethserver-mail-filter
+Requires:	spamassassin
+Requires:	nethserver-antivirus
 Requires:	p3scan
 
 %description
