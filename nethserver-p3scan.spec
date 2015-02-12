@@ -1,6 +1,6 @@
 Name:		nethserver-p3scan
-Version:        @@VERSION@@
-Release:        @@RELEASE@@
+Version:        1.0.0
+Release:        1
 Summary:	NethServer p3scan
 Group:		Networking/Daemons
 License:	GPLv2
