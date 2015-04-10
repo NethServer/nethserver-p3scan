@@ -21,3 +21,4 @@
     my $p3scan_spam = $p3scan{SpamScan} || 'disabled';
     my $OUT = 'checkspam' if ($p3scan_spam eq 'enabled');
 }
+spamcheck = /usr/bin/spamassassin
