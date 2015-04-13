@@ -1,6 +1,6 @@
 Name:		nethserver-p3scan
-Version:        1.0.0
-Release:        1%{?dist}
+Version: 1.0.1
+Release: 1%{?dist}
 Summary:	NethServer p3scan
 Group:		Networking/Daemons
 License:	GPLv2
@@ -39,6 +39,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 
 %changelog
+* Mon Apr 13 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.1-1
+- POP3 proxy do not check for spam - Bug #3114 [NethServer]
+
 * Fri Oct 03 2014 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.0-1.ns6
 - First release - Feature #2865
 
