@@ -1,5 +1,5 @@
 Name:		nethserver-p3scan
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{?dist}
 Summary:	NethServer p3scan
 Group:		Networking/Daemons
@@ -39,6 +39,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 
 %changelog
+* Tue May 19 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.2-1
+- Add maxchild option to p3scan.conf - Enhancement #3160 [NethServer]
+
 * Mon Apr 13 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.1-1
 - POP3 proxy do not check for spam - Bug #3114 [NethServer]
 
