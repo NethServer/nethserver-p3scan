@@ -1,0 +1,5 @@
+{
+    my $spam_tag_level = $amavisd{SpamTag2Level} || '5';
+    my $OUT = "required_score $spam_tag_level\n";
+}
+

@@ -10,6 +10,7 @@ my $event = "nethserver-p3scan-update";
 templates2events("/etc/p3scan/p3scan.conf", $event);
 templates2events("/etc/init/p3scan.conf", $event);
 templates2events("/etc/mail/spamassassin/bwlist.cf", $event);
+templates2events("/etc/mail/spamassassin/p3scan.cf", $event);
 event_services($event, qw(
    p3scan restart
 ));
@@ -21,3 +22,4 @@ event_actions($event, 'firewall-adjust' => '20');
 #--------------------------------------------------
 
 templates2events("/etc/mail/spamassassin/bwlist.cf", "nethserver-mail-filter-save");
+templates2events("/etc/mail/spamassassin/p3scan.cf", "nethserver-mail-filter-save");
