@@ -1,5 +1,5 @@
 Name:		nethserver-p3scan
-Version: 1.0.3
+Version: 1.0.4
 Release: 1%{?dist}
 Summary:	NethServer p3scan
 Group:		Networking/Daemons
@@ -39,6 +39,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 
 %changelog
+* Thu Aug 27 2015 Davide Principi <davide.principi@nethesis.it> - 1.0.4-1
+- POP3 Proxy spam tag level - Feature #3239 [NethServer]
+
 * Wed Jul 15 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.3-1
 - POP3 proxy antispam white and black list - Feature #3217 [NethServer]
 
