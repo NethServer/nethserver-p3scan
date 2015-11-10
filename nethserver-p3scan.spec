@@ -1,5 +1,5 @@
 Name:		nethserver-p3scan
-Version: 1.0.5
+Version: 1.0.6
 Release: 1%{?dist}
 Summary:	NethServer p3scan
 Group:		Networking/Daemons
@@ -39,6 +39,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 
 %changelog
+* Tue Nov 10 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.6-1
+- spamd for pop3 scan - Enhancement #3285 [NethServer]
+
 * Tue Sep 29 2015 Davide Principi <davide.principi@nethesis.it> - 1.0.5-1
 - Make Italian language pack optional - Enhancement #3265 [NethServer]
 
