@@ -1,5 +1,5 @@
 Name:		nethserver-p3scan
-Version: 1.0.6
+Version: 1.1.0
 Release: 1%{?dist}
 Summary:	NethServer p3scan
 Group:		Networking/Daemons
@@ -40,6 +40,9 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Thu Jul 07 2016 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.0-1
+- First NS7 release
+
 * Tue Nov 10 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.6-1
 - spamd for pop3 scan - Enhancement #3285 [NethServer]
 
