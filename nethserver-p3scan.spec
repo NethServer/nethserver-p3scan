@@ -1,5 +1,5 @@
 Name:		nethserver-p3scan
-Version: 1.1.2
+Version: 1.1.3
 Release: 1%{?dist}
 Summary:	NethServer p3scan
 Group:		Networking/Daemons
@@ -40,6 +40,9 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Thu Mar 08 2018 Davide Principi <davide.principi@nethesis.it> - 1.1.3-1
+- Remove p3scan dependency on amavisd-new - NethServer/dev#5424
+
 * Thu Sep 22 2016 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.1.2-1
 - P3scan: mail not filtered - Bug NethServer/dev#5114
 
